@@ -1,0 +1,59 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.modal-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-row label {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.modal-row input,
+.modal-row select,
+.modal-row textarea {
+  padding: 6px;
+  font-size: 1em;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button[type="submit"] {
+  background: #4caf50;
+  color: #fff;
+}
+
+.modal-actions button[type="button"] {
+  background: #bbb;
+  color: #fff;
+}

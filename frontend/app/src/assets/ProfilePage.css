@@ -1,0 +1,153 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-page h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.profile-page h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tabs button:hover {
+  color: #000;
+}
+
+.tabs button.active {
+  color: #000;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+/* Management table */
+.manage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.manage-table th,
+.manage-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.manage-table th {
+  background-color: #f9f9f9;
+}
+
+.manage-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.manage-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.manage-table button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.profile-page p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.add-animal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.add-animal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-animal-form input,
+.add-animal-form select,
+.add-animal-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-animal-form textarea {
+  resize: vertical;
+  grid-column: span 2;
+  min-height: 80px;
+}
+
+.add-animal-form button {
+  grid-column: span 2;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-animal-form button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}

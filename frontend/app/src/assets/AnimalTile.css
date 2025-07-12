@@ -1,0 +1,99 @@
+.animal-tile {
+  width: 260px;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.animal-tile:hover {
+  transform: translateY(-6px);
+}
+
+.animal-tile__image-wrapper {
+  width: 100%;
+  height: 180px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-tile__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.animal-tile__no-image {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #888;
+  font-size: 0.95em;
+}
+
+.animal-tile__info {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-tile__name {
+  font-size: 1.3em;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.animal-tile__species,
+.animal-tile__age {
+  font-size: 1em;
+  color: #555;
+  margin: 4px 0;
+}
+
+.animal-tile__description {
+  font-size: 0.9em;
+  color: #666;
+  margin: 8px 0;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+
+.animal-tile__adopt-button {
+  margin-top: auto;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.animal-tile__adopt-button:hover {
+  background-color: #45A047;
+}
+
+.animal-tile__footer {
+  width: 100%;
+  height: 12px;
+  background-color: #ffdf5d;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  margin-top: auto;
+}

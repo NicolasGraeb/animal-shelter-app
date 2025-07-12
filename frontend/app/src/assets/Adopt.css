@@ -1,0 +1,40 @@
+
+.adopt-page {
+  padding: 16px;
+  text-align: center;
+}
+
+.adopt-page h2 {
+  margin-bottom: 24px;
+  font-size: 1.5em;
+}
+
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.filters {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filters input[type="text"]:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
